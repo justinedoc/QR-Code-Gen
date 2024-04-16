@@ -68,6 +68,6 @@ const downloadCode = (value) => {
     })
     .catch((err) => {
       console.log(err);
-      document.querySelector(".error").style.display = 'block';
+      document.querySelector(".error").style.display = "block";
     });
 };
