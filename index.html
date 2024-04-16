@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Scanner</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="top"></section>
+      <section class="bottom"></section>
+      <article class="container">
+        <div class="right side">
+          <h2>QR Code Generator</h2>
+          <p>Paste a url or enter text to create QR code</p>
+
+          <form>
+            <input
+              type="text"
+              placeholder="Enter Text or URL"
+              required
+              id="inputBox"
+            />
+            <button class="btn" id="generateBtn">Generate QR Code</button>
+            <div class="error">Unable to connect</div>
+          </form>
+        </div>
+        <div class="left side">
+          <div class="loading">
+            <i class="bx bx-loader-circle bx-spin"></i>
+            <span>loading</span>
+          </div>
+          <div class="code hidden">
+            <div class="qr">
+              <img src="#" id="QR_CODE" />
+            </div>
+            <button class="btn" id="downloadBtn">
+              <i class="bx bxs-download"></i><span>Download</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
